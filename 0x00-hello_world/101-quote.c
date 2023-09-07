@@ -13,4 +13,3 @@ int main(void)
     return (1);
 }
 
-This code follows the Betty coding style guidelines, including proper indentation and comments. It prints the specified message to the standard error and returns 1 to indicate an error, as requested.
