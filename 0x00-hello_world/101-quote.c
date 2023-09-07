@@ -12,4 +12,3 @@ int main(void)
     write(2, msg, 59);
     return (1);
 }
-
