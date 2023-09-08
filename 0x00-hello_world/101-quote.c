@@ -7,12 +7,12 @@
  */
 int main(void)
 {
- const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
- ssize_t len = 59;
+const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+ssize_t len = 59;
 
- ssize_t wr = write(2, msg, len);
- if (wr != len)
+ssize_t wr = write(2, msg, len);
+if (wr != len)
   return (1);
 
- return (1);
+  return (1);
 }
