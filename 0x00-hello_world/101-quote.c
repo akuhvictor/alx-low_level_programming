@@ -1,14 +1,18 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Return: Always 1 (Error)
+ * Return: Always 1 (indicating an error)
  */
 int main(void)
 {
-    const char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    write(2, msg, sizeof(msg) - 1);
+ const char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+ ssize_t len = 59;
 
-    return (1);
+ ssize_t wr = write(2, msg, len);
+ if (wr != len)
+  return (1);
+
+ return (1);
 }
