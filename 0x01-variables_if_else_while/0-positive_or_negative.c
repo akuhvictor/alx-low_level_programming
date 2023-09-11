@@ -3,11 +3,6 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/**
- * main 
- *
- * Return: 0
- */ 
 int main(void)
 {
 int n;
@@ -29,4 +24,4 @@ printf("%d is negative\n", n);
 }
 
 return (0);
-}
+};
