@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int num;
+int main(void) {
+    int i;
 
-    for (num = 0; num < 10; num++)
-    {
-        printf("%d\n", num);
+    for (i = 0; i <= 9; i++) {
+        printf("%d", i);
     }
 
-    return (0);
+    printf("");
+
+    return 0;
 }
