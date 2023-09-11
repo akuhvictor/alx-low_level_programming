@@ -1,15 +1,22 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: Function that prints lowercase alphabets in reverse
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int i;
+int i;
 
-    for (i = 25; i >= 0; i--)
-    {
-        putchar('a' + i);
-    }
+for (i = 25; i >= 0; i--)
+{
+putchar('a' + i);
+}
 
-    putchar('\n');
+putchar('\n');
 
-    return 0;
+return (0);
 }
