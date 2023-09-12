@@ -1,13 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: function to print alphabet
- *
- * Return: Always 0 (Success)
+ * print_alphabet - Prints the lowercase alphabet followed by a new line.
  */
-#include "main.h"
 
 void print_alphabet(void)
 {
