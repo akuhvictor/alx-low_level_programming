@@ -1,23 +1,16 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-int _putchar(char c);
-void print_alphabet(void);
-
-#endif /* MAIN_H */
-
-
 #include "main.h"
 
-void print_alphabet(void)
+int main(void)
 {
-    char letter = 'a';
-
-    while (letter <= 'z')
-    {
-        _putchar(letter);
-        letter++;
-    }
-
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
     _putchar('\n');
+
+    return (0);
 }
