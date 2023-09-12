@@ -1,3 +1,9 @@
+/**
+ * Description: This program prints alphabets in lowercase
+ *
+ * Return: Always 0 (Success)
+ */
+
 #include "main.h"
 
 void print_alphabet(void)
