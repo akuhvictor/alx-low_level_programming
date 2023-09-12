@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: function prints alphabets
+ * Description: function to print alphabet
  *
  * Return: Always 0 (Success)
  */
