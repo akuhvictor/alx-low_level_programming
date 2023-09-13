@@ -2,30 +2,50 @@
 
 /**
  * print_times_table - Prints the n times table, starting with 0.
- * @n: The times table to print (0 <= n <= 15).
+ * @n: The number to generate the times table for.
  */
 void print_times_table(int n)
 {
-if (n < 0 || n > 15)
-return;
-
-int i, j, product;
-
-for (i = 0; i <= n; i++)
+if (n >= 0 && n <= 15)
 {
-for (j = 0; j <= n; j++)
+int product;
+
+for (int row = 0; row <= n; row++)
 {
-product = i * j;
+for (int column = 0; column <= n; column++)
+{
+product = row * column;
 
-if (j == 0)
-printf("%d", product);
-else
-printf(" %d", product);
+if (column != 0)
+_putchar(' ');
 
-if (j < n)
-printf(", ");
+if (product < 10)
+{
+_putchar(' ');
+_putchar(' ');
+}
+else if (product < 100)
+{
+_putchar(' ');
+}
+
+if (column == 0)
+{
+_putchar('0');
+}
 else
-printf("\n");
+{
+if (product >= 100)
+_putchar((product / 100) + '0');
+if (product >= 10)
+_putchar(((product / 10) % 10) + '0');
+_putchar((product % 10) + '0');
+}
+
+if (column != n)
+_putchar(',');
+}
+_putchar('\n');
 }
 }
 }
