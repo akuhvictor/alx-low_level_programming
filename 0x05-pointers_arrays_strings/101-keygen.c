@@ -2,29 +2,23 @@
 #include <stdlib.h>
 #include <time.h>
 
-char getRandomChar(const char *charSet, int charSetSize) {
-    return charSet[rand() % charSetSize];
-}
-
-void generateRandomPassword(char *password, int length) {
+char getRandomChar() {
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     int charsetSize = sizeof(charset) - 1;
-
-    for (int i = 0; i < length; i++) {
-        password[i] = getRandomChar(charset, charsetSize);
-    }
-
-    password[length] = '\0';
+    return charset[rand() % charsetSize];
 }
 
 int main() {
     srand(time(NULL));
 
     int passwordLength = 8;
-
     char password[passwordLength + 1];
 
-    generateRandomPassword(password, passwordLength);
+    for (int i = 0; i < passwordLength; i++) {
+        password[i] = getRandomChar();
+    }
+
+    password[passwordLength] = '\0';
 
     printf("Generated Password: %s\n", password);
 
