@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h> // Include the limits header for INT_MAX and INT_MIN
 
 /**
  * _atoi - Converts a string to an integer.
@@ -12,6 +13,7 @@ int sign = 1;
 int result = 0;
 int digit;
 int found_digit = 0;
+
 while (*s != '\0')
 {
 if (*s == '-')
@@ -21,6 +23,15 @@ sign *= -1;
 else if (*s >= '0' && *s <= '9')
 {
 digit = *s - '0';
+
+if (result > (INT_MAX - digit) / 10)
+{
+if (sign == 1)
+return INT_MAX;
+else
+return INT_MIN;
+}
+
 result = result * 10 + digit;
 found_digit = 1;
 }
