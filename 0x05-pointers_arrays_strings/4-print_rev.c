@@ -17,7 +17,7 @@ length++;
 
 for (int i = length - 1; i >= 0; i--)
 {
-putchar(s[i]);
+putchar(s[i]);void _puts(char *str);
 }
 
 putchar('\n');
