@@ -9,7 +9,8 @@ char getRandomChar() {
     return charset[rand() % charsetSize];
 }
 
-int main(void) {
+int main(void)
+{
     srand(time(NULL));
 
     int passwordLength = 8;
