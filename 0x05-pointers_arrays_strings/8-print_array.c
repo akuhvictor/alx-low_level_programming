@@ -8,7 +8,7 @@
 void print_array(int *a, int n)
 {
 if (n <= 0)
-{void print_array(int *a, int n)
+{
 putchar('\n');
 return;
 }
@@ -16,7 +16,6 @@ return;
 for (int i = 0; i < n; i++)
 {
 printf("%d", a[i]);
-
 
 if (i < n - 1)
 {
