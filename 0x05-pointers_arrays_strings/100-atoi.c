@@ -16,7 +16,7 @@ while (*s != '\0')
 {
 if (*s == '-')
 {
-sign *= -1; // Toggle the sign for negative numbers
+sign *= -1;
 }
 else if (*s >= '0' && *s <= '9')
 {
