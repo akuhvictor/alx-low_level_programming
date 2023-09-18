@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "main.h"
 
 char getRandomChar() {
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -9,8 +8,7 @@ char getRandomChar() {
     return charset[rand() % charsetSize];
 }
 
-int main(void)
-{
+int main() {
     srand(time(NULL));
 
     int passwordLength = 8;
