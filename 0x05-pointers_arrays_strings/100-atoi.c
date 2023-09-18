@@ -8,7 +8,7 @@
  */
 int _atoi(char *s)
 {
-int sign = 1; // Initialize sign to positive
+int sign = 1;
 int result = 0;
 int digit;
 int found_digit = 0;
