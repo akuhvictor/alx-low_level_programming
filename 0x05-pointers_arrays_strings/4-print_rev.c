@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * print_rev - Prints a string in reverse followed by a newline to stdout.
+ * @s: Pointer to the string to be printed in reverse.
+ */
+
 void print_rev(char *s)
 {
 int length = 0;
